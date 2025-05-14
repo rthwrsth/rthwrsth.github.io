@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타크래프트</title>
+</head>
+<body>
+    <img id="wraith" class="animate__animated animate__fadeInLeft" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnrNXH%2FbtrI3xs4jc3%2FxLSKTFXuKbnDnA40KUnyJ1%2Fimg.png" alt="레이스">
+    <img id="cloaking" onclick="hide()" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc5FBz9%2FbtrIZ6XNerM%2F5Z05ACpfiBsqZj0KFTIBwk%2Fimg.png" alt="클로킹 버튼">
+    <script>
+        function hide() {    //hide는 이름이 바꿔도 됨
+            status =  document.getElementById("wraith").style.visibility;
+            
+            if(status == ""){   //status값이 없다면 히든으로 바꿔라
+                 document.getElementById("wraith").style.visibility = "hidden";
+            } else if (status == "hidden") {  //히든인 상태라면 아무것도 없게 만들어라라
+                 document.getElementById("wraith").style.visibility = ""
+            }
+            //사운드 추가가
+            var audio = new Audio('https://cdn.pixabay.com/audio/2024/07/30/audio_e8c15810bd.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
